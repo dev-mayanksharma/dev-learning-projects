@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Speech Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <main class="glass-container">
+        <header>
+            <h1>Text To Speech</h1>
+            <p class="subtitle">Transform your text into natural-sounding speech instantly.</p>
+        </header>
+
+        <section class="input-section">
+            <textarea id="text-input" placeholder="Type or paste your text here..."></textarea>
+            <div class="counter-container">
+                <span id="word-counter">0 / 1000 words</span>
+                <span id="error-message" class="hidden">Please enter some text.</span>
+            </div>
+        </section>
+
+        <section class="controls-section">
+            <div class="custom-select">
+                <select id="voice-select">
+                    <option value="" disabled selected>Loading voices...</option>
+                </select>
+            </div>
+            <button id="convert-btn">
+                <span>Convert</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </button>
+        </section>
+
+        <section class="visualizer-section">
+            <div class="visualizer" id="visualizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="1.js"></script>
+</body>
+</html>
